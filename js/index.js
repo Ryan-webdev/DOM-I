@@ -40,3 +40,75 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//task 1 Create selectors by using any of the DOM element's methods
+
+let headImg = document.getElementById("cta-img");
+let midImg = document.getElementById("middle-img");
+
+
+//tast 1 Note that IDs have been used on all images.  Use the IDs to update src path content
+headImg.setAttribute('src', siteContent["cta"]["img-src"])
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//task 2 Using your selectors, update the content to match the example file.
+
+//nav
+let nav1 = document.querySelector('.container header nav a:nth-child(1)');
+    nav1.textContent = siteContent['nav']['nav-item-1']
+
+let nav2 = document.querySelector('.container header nav a:nth-child(2)');
+    nav2.textContent = siteContent['nav']['nav-item-2']
+
+let nav3 = document.querySelector('.container header nav a:nth-child(3)');
+    nav3.textContent = siteContent['nav']['nav-item-3']
+
+let nav4 = document.querySelector('.container header nav a:nth-child(4)');
+    nav4.textContent = siteContent['nav']['nav-item-4']
+
+let nav5 = document.querySelector('.container header nav a:nth-child(5)');
+    nav5.textContent = siteContent['nav']['nav-item-5']
+
+let nav6 = document.querySelector('.container header nav a:nth-child(6)');
+    nav6.textContent = siteContent['nav']['nav-item-6']
+
+//cta
+let header = document.querySelector('.cta-text h1');
+  header.textContent = siteContent['cta']['h1']
+
+let topButton = document.querySelector('.cta-text button');
+topButton.textContent = siteContent['cta']['button']
+
+//Main content
+//top content
+//features section
+let features = document.querySelector('.top-content .text-content:nth-child(1) h4');
+features.textContent = siteContent['main-content']['features-h4']
+
+let featPara = document.querySelector('.top-content .text-content:nth-child(1) p');
+featPara.textContent = siteContent['main-content']['features-content']
+
+//about section
+let about = document.querySelector('.top-content .text-content:nth-child(2) h4');
+about.textContent = siteContent['main-content']['about-h4']
+
+let aboutPara = document.querySelector('.top-content .text-content:nth-child(2) p');
+aboutPara.textContent = siteContent['main-content']['about-content']
+
+//bottom content
+
+//services section
+let services = document.querySelector('.bottom-content .text-content:nth-child(1) h4');
+services.textContent = siteContent['main-content']['services-h4']
+
+let servPara = document.querySelector('.bottom-content .text-content:nth-child(1) p');
+servPara.textContent = siteContent['main-content']['services-content']
+
+//product section
+let product = document.querySelector('.bottom-content .text-content:nth-child(2) h4');
+product.textContent = siteContent['main-content']['product-h4']
+
+let proPara = document.querySelector('.bottom-content .text-content:nth-child(2) p');
+proPara.textContent = siteContent['main-content']['product-content']
+
+//vision section
