@@ -112,3 +112,45 @@ let proPara = document.querySelector('.bottom-content .text-content:nth-child(2)
 proPara.textContent = siteContent['main-content']['product-content']
 
 //vision section
+
+let vision = document.querySelector('.bottom-content .text-content:nth-child(3) h4');
+vision.textContent = siteContent['main-content']['vision-h4']
+
+let visionPara = document.querySelector('.bottom-content .text-content:nth-child(3) p');
+visionPara.textContent = siteContent['main-content']['vision-content']
+
+//contact section
+let contact = document.querySelector('.contact h4');
+contact.textContent = siteContent['contact']['contact-h4']
+
+let address = document.querySelector('.contact p:nth-child(2)');
+address.textContent = siteContent['contact']['address']
+
+let phone = document.querySelector('.contact p:nth-child(3)');
+phone.textContent = siteContent['contact']['phone']
+
+let email = document.querySelector('.contact p:nth-child(4)');
+email.textContent = siteContent['contact']['email']
+
+//footer
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright']
+
+//task 3  Change the color of the navigation text to be green.
+
+let navGreen = document.querySelectorAll('.container header nav a');
+navGreen.forEach(link => link.style.color = 'green')
+
+// Utilize .appendChild() and .prepend() to add two new items to the navigation system. You can call them whatever you want.
+let nav = document.querySelector('.container header nav');
+let start = document.createElement('a');
+  start.textContent = 'Appended';
+  start.style.cursor = 'pointer';
+  start.style.color = 'green';
+nav.appendChild(start);
+
+let end = document.createElement('a');
+    end.textContent = 'Prepended';
+    end.style.cursor = 'pointer';
+    end.style.color = 'seagreen';
+    nav.prepend(end);
